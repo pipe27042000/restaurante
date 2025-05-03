@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú del Restaurante</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .menu-filtros {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .filtro-btn {
+      background-color: #2c3e50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .filtro-btn:hover,
+    .filtro-btn.activo {
+      background-color: #e74c3c;
+    }
+  </style>
+</head>
+<body>
+  <!-- Barra de navegación simplificada -->
+  <nav class="navbar">
+    <div class="navbar-logo">
+      <a href="index.html">Las Delicias de Pipe</a>
+    </div>
+    <ul class="navbar-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="menu.html">Menú</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li><a href="sedes.html">Sedes</a></li>
+      <li><a href="reservas.html">Reservas</a></li>
+    </ul>
+  </nav>
+
+  <header class="encabezado">
+    <h1>Menú del Restaurante</h1>
+    <p>Disfruta de nuestra deliciosa variedad de platos, siempre frescos y preparados con los mejores ingredientes.</p>
+  </header>
+
+  <section class="menu">
+    <h2 class="menu-titulo">Nuestro Menú</h2>
+
+    <!-- Botones de categoría -->
+    <div class="menu-filtros">
+      <button class="filtro-btn activo" data-categoria="todos">Todos</button>
+      <button class="filtro-btn" data-categoria="hamburguesa">Hamburguesas</button>
+      <button class="filtro-btn" data-categoria="pizza">Pizzas</button>
+      <button class="filtro-btn" data-categoria="perro">Perros</button>
+      <button class="filtro-btn" data-categoria="salchipapa">Salchipapas</button>
+      <button class="filtro-btn" data-categoria="bebida">Bebidas</button>
+    </div>
+
+    <div class="contenedor-menu">
+      <!-- Hamburguesas -->
+      <div class="item-menu" data-categoria="hamburguesa">
+        <img src="https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg?auto=compress&cs=tinysrgb&h=300" alt="Hamburguesa Clásica" class="img-producto">
+        <h3>Hamburguesa Clásica</h3>
+        <p class="descripcion">Deliciosa hamburguesa con carne de res, queso, lechuga, tomate, cebolla, y salsa especial.</p>
+        <p class="precio">$15,000</p>
+      </div>
+
+      <div class="item-menu" data-categoria="hamburguesa">
+        <img src="https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg?auto=compress&cs=tinysrgb&h=300" alt="Hamburguesa Clásica" class="img-producto">
+        <h3>Hamburguesa Clásica</h3>
+        <p class="descripcion">Deliciosa hamburguesa con carne de res, queso, lechuga, tomate, cebolla, y salsa especial.</p>
+        <p class="precio">$15,000</p>
+      </div>
+
+      <div class="item-menu" data-categoria="hamburguesa">
+        <img src="https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg?auto=compress&cs=tinysrgb&h=300" alt="Hamburguesa Clásica" class="img-producto">
+        <h3>Hamburguesa Clásica</h3>
+        <p class="descripcion">Deliciosa hamburguesa con carne de res, queso, lechuga, tomate, cebolla, y salsa especial.</p>
+        <p class="precio">$15,000</p>
+      </div>
+
+      <div class="item-menu" data-categoria="hamburguesa">
+        <img src="https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg?auto=compress&cs=tinysrgb&h=300" alt="Hamburguesa Clásica" class="img-producto">
+        <h3>Hamburguesa Clásica</h3>
+        <p class="descripcion">Deliciosa hamburguesa con carne de res, queso, lechuga, tomate, cebolla, y salsa especial.</p>
+        <p class="precio">$15,000</p>
+      </div>
+
+      <div class="item-menu" data-categoria="hamburguesa">
+        <img src="https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg?auto=compress&cs=tinysrgb&h=300" alt="Hamburguesa Clásica" class="img-producto">
+        <h3>Hamburguesa Clásica</h3>
+        <p class="descripcion">Deliciosa hamburguesa con carne de res, queso, lechuga, tomate, cebolla, y salsa especial.</p>
+        <p class="precio">$15,000</p>
+      </div>
+
+      <div class="item-menu" data-categoria="hamburguesa">
+        <img src="https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg?auto=compress&cs=tinysrgb&h=300" alt="Hamburguesa Clásica" class="img-producto">
+        <h3>Hamburguesa Clásica</h3>
+        <p class="descripcion">Deliciosa hamburguesa con carne de res, queso, lechuga, tomate, cebolla, y salsa especial.</p>
+        <p class="precio">$15,000</p>
+      </div>
+
+      <div class="item-menu" data-categoria="hamburguesa">
+        <img src="https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg?auto=compress&cs=tinysrgb&h=300" alt="Hamburguesa Clásica" class="img-producto">
+        <h3>Hamburguesa Clásica</h3>
+        <p class="descripcion">Deliciosa hamburguesa con carne de res, queso, lechuga, tomate, cebolla, y salsa especial.</p>
+        <p class="precio">$15,000</p>
+      </div>
+      <div class="item-menu" data-categoria="hamburguesa">
+        <img src="https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg?auto=compress&cs=tinysrgb&h=300" alt="Hamburguesa Clásica" class="img-producto">
+        <h3>Hamburguesa Clásica</h3>
+        <p class="descripcion">Deliciosa hamburguesa con carne de res, queso, lechuga, tomate, cebolla, y salsa especial.</p>
+        <p class="precio">$15,000</p>
+      </div>
+
+      <!-- Pizzas -->
+      <div class="item-menu" data-categoria="pizza">
+        <img src="imagenes/Pizzanapolitana.jpeg" alt="Pizza Margarita" class="img-producto">
+        <h3>Pizza Napolitana</h3>
+        <p class="descripcion">Pizza con salsa de tomate, mozzarella y albahaca fresca, perfecta para los amantes de la pizza tradicional.</p>
+        <p class="precio">$20,000</p>
+      </div>
+
+      <div class="item-menu" data-categoria="pizza">
+        <img src="imagenes/pizzapeperoni.jpeg" alt="Pizza Margarita" class="img-producto">
+        <h3>Pizza peperoni</h3>
+        <p class="descripcion">Pizza con salsa de tomate, mozzarella y albahaca fresca, perfecta para los amantes de la pizza tradicional.</p>
+        <p class="precio">$20,000</p>
+      </div>
+
+      <div class="item-menu" data-categoria="pizza">
+        <img src="imagenes/pizza.jpeg" alt="Pizza Margarita" class="img-producto">
+        <h3>Pizza </h3>
+        <p class="descripcion">Pizza con salsa de tomate, mozzarella y albahaca fresca, perfecta para los amantes de la pizza tradicional.</p>
+        <p class="precio">$20,000</p>
+      </div>
+
+      <div class="item-menu" data-categoria="pizza">
+        <img src="imagenes/pizzahawaiana.jpeg" alt="Pizza Margarita" class="img-producto">
+        <h3>Pizza hawaiana </h3>
+        <p class="descripcion">Pizza con salsa de tomate, mozzarella y albahaca fresca, perfecta para los amantes de la pizza tradicional.</p>
+        <p class="precio">$20,000</p>
+      </div>
+
+      <!-- Perros Calientes -->
+      <div class="item-menu" data-categoria="perro">
+        <img src="imagenes/perro.jpeg" alt="Perro Caliente" class="img-producto">
+        <h3>Perro Caliente</h3>
+        <p class="descripcion">Un perro caliente clásico, con salchicha de calidad, pan suave y acompañado de nuestras deliciosas salsas.</p>
+        <p class="precio">$8,000</p>
+      </div>
+
+      <div class="item-menu" data-categoria="perro">
+        <img src="imagenes/perro3.jpeg" alt="Perro Caliente" class="img-producto">
+        <h3>Perro Caliente</h3>
+        <p class="descripcion">Un perro caliente clásico, con salchicha de calidad, pan suave y acompañado de nuestras deliciosas salsas.</p>
+        <p class="precio">$8,000</p>
+      </div>
+
+      <div class="item-menu" data-categoria="perro">
+        <img src="imagenes/perro.jpeg" alt="Perro Caliente" class="img-producto">
+        <h3>Perro Caliente</h3>
+        <p class="descripcion">Un perro caliente clásico, con salchicha de calidad, pan suave y acompañado de nuestras deliciosas salsas.</p>
+        <p class="precio">$8,000</p>
+      </div>
+
+      <div class="item-menu" data-categoria="perro">
+        <img src="imagenes/perro.jpeg" alt="Perro Caliente" class="img-producto">
+        <h3>Perro Caliente</h3>
+        <p class="descripcion">Un perro caliente clásico, con salchicha de calidad, pan suave y acompañado de nuestras deliciosas salsas.</p>
+        <p class="precio">$8,000</p>
+      </div>
+
+
+
+
+      <!-- Salchipapa -->
+      <div class="item-menu" data-categoria="salchipapa">
+        <img src="imagenes/salchi.jpeg" alt="Salchipapa" class="img-producto">
+        <h3>Salchipapa</h3>
+        <p class="descripcion">Papitas fritas acompañadas de deliciosas salchichas cortadas en rodajas, ideal para compartir.</p>
+        <p class="precio">$10,000</p>
+      </div>
+
+      <div class="item-menu" data-categoria="salchipapa">
+        <img src="imagenes/salchi.jpeg" alt="Salchipapa" class="img-producto">
+        <h3>Salchipapa</h3>
+        <p class="descripcion">Papitas fritas acompañadas de deliciosas salchichas cortadas en rodajas, ideal para compartir.</p>
+        <p class="precio">$10,000</p>
+      </div>
+
+      <div class="item-menu" data-categoria="salchipapa">
+        <img src="imagenes/salchi.jpeg" alt="Salchipapa" class="img-producto">
+        <h3>Salchipapa</h3>
+        <p class="descripcion">Papitas fritas acompañadas de deliciosas salchichas cortadas en rodajas, ideal para compartir.</p>
+        <p class="precio">$10,000</p>
+      </div>
+
+      <div class="item-menu" data-categoria="salchipapa">
+        <img src="imagenes/salchi.jpeg" alt="Salchipapa" class="img-producto">
+        <h3>Salchipapa</h3>
+        <p class="descripcion">Papitas fritas acompañadas de deliciosas salchichas cortadas en rodajas, ideal para compartir.</p>
+        <p class="precio">$10,000</p>
+      </div>
+
+      <div class="item-menu" data-categoria="salchipapa">
+        <img src="imagenes/salchi.jpeg" alt="Salchipapa" class="img-producto">
+        <h3>Salchipapa</h3>
+        <p class="descripcion">Papitas fritas acompañadas de deliciosas salchichas cortadas en rodajas, ideal para compartir.</p>
+        <p class="precio">$10,000</p>
+      </div>
+
+      <div class="item-menu" data-categoria="salchipapa">
+        <img src="imagenes/salchi.jpeg" alt="Salchipapa" class="img-producto">
+        <h3>Salchipapa</h3>
+        <p class="descripcion">Papitas fritas acompañadas de deliciosas salchichas cortadas en rodajas, ideal para compartir.</p>
+        <p class="precio">$10,000</p>
+      </div>
+
+      <div class="item-menu" data-categoria="salchipapa">
+        <img src="imagenes/salchi.jpeg" alt="Salchipapa" class="img-producto">
+        <h3>Salchipapa</h3>
+        <p class="descripcion">Papitas fritas acompañadas de deliciosas salchichas cortadas en rodajas, ideal para compartir.</p>
+        <p class="precio">$10,000</p>
+      </div>
+
+      <div class="item-menu" data-categoria="salchipapa">
+        <img src="imagenes/salchi.jpeg" alt="Salchipapa" class="img-producto">
+        <h3>Salchipapa</h3>
+        <p class="descripcion">Papitas fritas acompañadas de deliciosas salchichas cortadas en rodajas, ideal para compartir.</p>
+        <p class="precio">$10,000</p>
+      </div>
+
+      <!-- Bebidas -->
+      <div class="item-menu" data-categoria="bebida">
+        <img src="imagenes/quatro.jpeg" alt="Bebida Refrescante" class="img-producto">
+        <h3>Cuatro</h3>
+        <p class="descripcion">Disfruta de nuestras bebidas frías como gaseosas, jugos naturales y aguas frescas.</p>
+        <p class="precio">$3,000</p>
+      </div>
+
+      <div class="item-menu" data-categoria="bebida">
+        <img src="imagenes/cocacola.jpeg" alt="Bebida Refrescante" class="img-producto">
+        <h3>Coca cola</h3>
+        <p class="descripcion">Disfruta de nuestras bebidas frías como gaseosas, jugos naturales y aguas frescas.</p>
+        <p class="precio">$3,000</p>
+      </div>
+
+      <div class="item-menu" data-categoria="bebida">
+        <img src="imagenes/manzana.jpeg" alt="Bebida Refrescante" class="img-producto">
+        <h3>Manzana</h3>
+        <p class="descripcion">Disfruta de nuestras bebidas frías como gaseosas, jugos naturales y aguas frescas.</p>
+        <p class="precio">$3,000</p>
+      </div>
+
+      <div class="item-menu" data-categoria="bebida">
+        <img src="imagenes/colombiana.jpeg" alt="Bebida Refrescante" class="img-producto">
+        <h3>Colombiana</h3>
+        <p class="descripcion">Disfruta de nuestras bebidas frías como gaseosas, jugos naturales y aguas frescas.</p>
+        <p class="precio">$3,000</p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Las Delicias de Pipe - Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- JavaScript para filtros -->
+  <script>
+    const botones = document.querySelectorAll(".filtro-btn");
+    const items = document.querySelectorAll(".item-menu");
+
+    botones.forEach(boton => {
+      boton.addEventListener("click", () => {
+        botones.forEach(b => b.classList.remove("activo"));
+        boton.classList.add("activo");
+
+        const categoria = boton.getAttribute("data-categoria");
+
+        items.forEach(item => {
+          if (categoria === "todos" || item.getAttribute("data-categoria") === categoria) {
+            item.style.display = "block";
+          } else {
+            item.style.display = "none";
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+  <footer>
+   

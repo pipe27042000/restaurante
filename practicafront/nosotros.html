@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosotros - Las Delicias de Pipe</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- Para interactividad -->
+</head>
+<body>
+  <!-- Barra de navegación -->
+  <nav class="navbar">
+    <div class="navbar-logo">
+      <a href="index.html">Las Delicias de Pipe</a>
+    </div>
+    <ul class="navbar-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="menu.html">Menú</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="sedes.html">Sedes</a></li>
+        <li><a href="reservas.html">Reservas</a></li>
+    </ul>
+  </nav>
+
+  <header class="encabezado">
+    <h1>Conoce Más Sobre Nosotros</h1>
+    <p>En "Las Delicias de Pipe" nos apasiona ofrecerte lo mejor de la comida rápida, con ingredientes frescos y un ambiente acogedor.</p>
+  </header>
+
+  <section class="sobre-nosotros">
+    <h2>Quiénes Somos</h2>
+    <p>Somos un restaurante especializado en comida rápida, fundado con el objetivo de ofrecer deliciosos platos preparados con amor y dedicación. Nuestro menú está diseñado para satisfacer todos los gustos, desde hamburguesas clásicas hasta pizzas y bebidas refrescantes. ¡Te invitamos a visitarnos y disfrutar de una experiencia única!</p>
+
+    <h3>Nuestra Misión</h3>
+    <p>Brindar a nuestros clientes una experiencia gastronómica de calidad, con un servicio rápido, amable y productos frescos que resalten lo mejor de la comida rápida.</p>
+
+    <h3>Nuestra Visión</h3>
+    <p>Ser reconocidos como el restaurante de comida rápida más innovador y de mejor calidad en la ciudad, ofreciendo un ambiente agradable y un excelente servicio.</p>
+  </section>
+
+  <!-- Galería de Imágenes -->
+  <section class="galeria">
+    <h2>Galería</h2>
+    <div class="galeria-imagenes">
+      <img src="https://via.placeholder.com/300x200" alt="Restaurante 1">
+      <img src="https://via.placeholder.com/300x200" alt="Restaurante 2">
+      <img src="https://via.placeholder.com/300x200" alt="Restaurante 3">
+      <img src="https://via.placeholder.com/300x200" alt="Restaurante 4">
+    </div>
+  </section>
+
+  <!-- Testimonios de Clientes -->
+  <section class="testimonios">
+    <h2>Lo que dicen nuestros clientes</h2>
+    <div class="testimonios-lista">
+      <div class="testimonio-item">
+        <p>"¡El mejor restaurante de comida rápida que he probado! Las hamburguesas están deliciosas y el servicio es excelente."</p>
+        <p>- Juan Pérez</p>
+      </div>
+      <div class="testimonio-item">
+        <p>"Me encantó la pizza. El ambiente es muy acogedor y el personal muy atento. Volveré pronto."</p>
+        <p>- Ana González</p>
+      </div>
+      <div class="testimonio-item">
+        <p>"Excelente relación calidad-precio. Siempre disfruto de una buena comida aquí."</p>
+        <p>- Carlos López</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Línea de Tiempo Interactiva -->
+  <section class="historia">
+    <h2>Nuestra Historia</h2>
+    <div class="historia-timeline">
+      <div class="timeline-item" onclick="mostrarAlerta('Fundación')">
+        <h3>Fundación</h3>
+        <p>Iniciamos nuestra aventura en 2010 con el sueño de ofrecer comida rápida de calidad.</p>
+      </div>
+      <div class="timeline-item" onclick="mostrarAlerta('Expansión')">
+        <h3>Expansión</h3>
+        <p>En 2015 abrimos nuestra segunda sucursal en el centro de la ciudad.</p>
+      </div>
+      <div class="timeline-item" onclick="mostrarAlerta('Premios')">
+        <h3>Premios</h3>
+        <p>En 2020 recibimos el premio al "Mejor Restaurante de Comida Rápida".</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Las Delicias de Pipe - Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    function mostrarAlerta(etapa) {
+      Swal.fire({
+        title: `¡Más información sobre ${etapa}!`,
+        text: `Esta es la etapa de ${etapa} de nuestra historia.`,
+        icon: 'info',
+        confirmButtonText: 'Cerrar'
+      });
+    }
+  </script>
+</body>
+</html>
+    <footer>
+        <p>© 2025 Las Delicias de Pipe - Todos los derechos reservados.</p>

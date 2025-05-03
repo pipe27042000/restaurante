@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservas - Las Delicias de Pipe</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <!-- Navegación -->
+  <nav class="navbar">
+    <div class="navbar-logo">
+      <a href="index.html">Las Delicias de Pipe</a>
+    </div>
+    <ul class="navbar-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="menu.html">Menú</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="sedes.html">Sedes</a></li>
+      <li><a href="reservas.html" class="activo">Reservas</a></li>
+    </ul>
+  </nav>
+
+  <header class="encabezado">
+    <h1>Reserva tu mesa</h1>
+    <p>¡Haz tu reserva fácil y rápido para disfrutar de nuestras delicias sin esperar!</p>
+  </header>
+
+  <section class="reserva-formulario">
+    <form id="formReserva" formaction="https://example.com/reservas" method="POST">
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="telefono">Teléfono de contacto:</label>
+      <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{10}" placeholder="Ej. 3208678103">
+
+      <label for="fecha">Fecha:</label>
+      <input type="date" id="fecha" name="fecha" required>
+
+      <label for="hora">Hora:</label>
+      <input type="time" id="hora" name="hora" required>
+
+      <label for="personas">Número de personas:</label>
+      <input type="number" id="personas" name="personas" min="1" max="20" required>
+
+      <label for="notas">Notas adicionales (opcional):</label>
+      <textarea id="notas" name="notas" rows="4" placeholder="¿Algo especial que debamos saber?"></textarea>
+
+      <button type="submit" class="btn-reservar">Reservar ahora</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Las Delicias de Pipe - Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    document.getElementById("formReserva").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const nombre = document.getElementById("nombre").value;
+      const fecha = document.getElementById("fecha").value;
+      const hora = document.getElementById("hora").value;
+      const personas = document.getElementById("personas").value;
+
+      Swal.fire({
+        icon: 'success',
+        title: '¡Reserva enviada!',
+        html: `<p><strong>${nombre}</strong>, tu reserva para <strong>${personas} persona(s)</strong> el <strong>${fecha}</strong> a las <strong>${hora}</strong> ha sido registrada.</p>`,
+        confirmButtonText: 'Aceptar'
+      });
+
+      // Aquí podrías enviar los datos a tu backend o API más adelante
+      this.reset();
+    });
+  </script>
+</body>
+</html>
